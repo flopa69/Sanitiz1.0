@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
+        //setSupportActionBar(toolbar)
 
         preferenceHelper = PreferenceHelper(this)
 
@@ -55,10 +55,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Chengwei is gay", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
